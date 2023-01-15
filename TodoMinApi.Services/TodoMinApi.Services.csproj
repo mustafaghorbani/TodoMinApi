@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Cqr\EventHandlers\" />
+    <Folder Include="Cqr\Events\" />
+    <Folder Include="Engine\Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoMinApi.Domain\TodoMinApi.Domain.csproj" />
+    <ProjectReference Include="..\TodoMinApi.Infrastructure\TodoMinApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\TodoMinApi.Repository\TodoMinApi.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
